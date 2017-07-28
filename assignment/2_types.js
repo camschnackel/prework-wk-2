@@ -18,7 +18,7 @@ var someBoolean = false;
 
 /*theDoubler(someNumber);*/
 /*theDoubler(someString);*/
-theDoubler(someBoolean);
+/*theDoubler(someBoolean);*/
 
 function theDoubler(someInput) {
 	// typeof is a built in javascript tool that allows us to find the type of an object
