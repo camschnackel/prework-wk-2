@@ -15,12 +15,17 @@ console.log('Script sourced!');
 // that asks "Of what animal am I thinking?".
 
 // var animal =
+var animal = prompt("Of what animal am I thinking?")
 
 // 2. Write a conditional statement (if/else) that alerts
 // - "How did you know?!" if the user guesses "turtle" or
 // - "Try again." if the user did not guess "turtle" correctly.
 // IMPORTANT: Use these exact strings: 'Try again.' and 'How did you know?!'.
-
+if (animal=="turtle"){
+  confirm("How did you know?!")
+} else {
+  confirm("Try again.")
+}
 // 3. Refactor your code above into the "animalGuess" function below.
 // Refactor means the website should behave the same to the users,
 // but the code is written differently.
@@ -28,9 +33,15 @@ console.log('Script sourced!');
 // Call the function by passing the animal variable into it
 
 function animalGuess(animalName) {
-  // conditional statement goes in here
+  if (animalName=="turtle"){
+    confirm("How did you know?!")
+  } else {
+    confirm("Try again.")
+  }
 }
+
+animalGuess(animal)
 
 // 4. Answer the question: What will "console.log(animalName)" log outside the
 // "animalGuess" function?
-// Your answer here in a comment
+// Uncaught ReferenceError: animalName is not defined at 1_alerts.js:line x
