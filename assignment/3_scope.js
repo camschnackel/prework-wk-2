@@ -18,35 +18,35 @@
     var theNumber = 1;
 
     var michelangelo = function (value) {
-        value = (value * 2);
+        value = (value * 2); //1*2=2
         return value;
     };
 
-    var donatello = function (value, anotherValue) {
-        value = anotherValue + value;
-        anotherValue = value * anotherValue;
-        return anotherValue;
+    var donatello = function (value, anotherValue) { //2, 2
+        value = anotherValue + value; //value=2+2=4
+        anotherValue = value * anotherValue; //anotherValue=4*2=8
+        return anotherValue; //8
     };
 
     var leonardo = function (value) {
-        var anotherValue = value;
-        value *= 4;
-        theNumber = value / 2;
-        return (value + anotherValue);
+        var anotherValue = value; //anotherValue=1
+        value *= 4; //1*4=4
+        theNumber = value / 2; //4/2=2; theNumber=2
+        return (value + anotherValue); //4+1=5
     };
 
-    var raphael = function (value, anotherValue, yetAnotherValue) {
-        value = value * anotherValue + yetAnotherValue;
-        return yetAnotherValue;
+    var raphael = function (value, anotherValue, yetAnotherValue) { //3, 2, 2
+        value = value * anotherValue + yetAnotherValue; //value=3*2+2=8
+        return yetAnotherValue; //2
     };
 
-    michelangelo(theNumber) + leonardo(theNumber);
+    michelangelo(theNumber) + leonardo(theNumber); //2+5=7
     // ^ Before running the script, what number would you expect the line above to evaluate to?
-    var resultOne = undefined; // replace undefined with the result
+    var resultOne = 7; // replace undefined with the result
 
 
-    theNumber = theNumber * 2;
+    theNumber = theNumber * 2; //theNumber=1*2=2
 
-    donatello(theNumber, 2) - (raphael(3, 2, theNumber));
+    donatello(theNumber, 2) - (raphael(3, 2, theNumber)); //8-2=6
     // ^ Before running the script, what number would you expect the line above to evaluate to?
-    var resultTwo = undefined; // replace undefined with the result
+    var resultTwo = 6; // replace undefined with the result
