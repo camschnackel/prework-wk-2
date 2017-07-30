@@ -21,13 +21,13 @@ var animal = prompt("Of what animal am I thinking?")
 // - "How did you know?!" if the user guesses "turtle" or
 // - "Try again." if the user did not guess "turtle" correctly.
 // IMPORTANT: Use these exact strings: 'Try again.' and 'How did you know?!'.
-/*
+
 if (animal=="turtle"){
   confirm("How did you know?!")
 } else {
   confirm("Try again.")
 }
-*/
+
 // 3. Refactor your code above into the "animalGuess" function below.
 // Refactor means the website should behave the same to the users,
 // but the code is written differently.
