@@ -36,13 +36,13 @@ if (animal=="turtle"){
 
 function animalGuess(animalName) {
   if (animalName=="turtle"){
-    confirm("How did you know?!")
+    alert("How did you know?!")
   } else {
-    confirm("Try again.")
+    alert("Try again.")
   }
 }
 
-animalGuess(animal)
+animalGuess(animal);
 
 // 4. Answer the question: What will "console.log(animalName)" log outside the
 // "animalGuess" function?
