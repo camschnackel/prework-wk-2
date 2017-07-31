@@ -23,9 +23,9 @@ var animal = prompt("Of what animal am I thinking?")
 // IMPORTANT: Use these exact strings: 'Try again.' and 'How did you know?!'.
 
 if (animal=="turtle"){
-  confirm("How did you know?!")
+  alert("How did you know?!")
 } else {
-  confirm("Try again.")
+  alert("Try again.")
 }
 
 // 3. Refactor your code above into the "animalGuess" function below.
